@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+</head>
+<body>
+    <h1 style="margin-top:70px;">Calculator</h1>
+    <div class="main">
+        <form name="calc">
+            <input type="text" min="0" name="answer" id="answer"><br><br>
+            <input type="button" value="1" onclick="calc.answer.value+=1">
+            <input type="button" value="2" onclick="calc.answer.value+=2">
+            <input type="button" value="3" onclick="calc.answer.value+=3">
+            <input type="button" value="+" onclick="calc.answer.value+='+'"><br><br>
+            <input type="button" value="4" onclick="calc.answer.value+=4">
+            <input type="button" value="5" onclick="calc.answer.value+=5">
+            <input type="button" value="6" onclick="calc.answer.value+=6">
+            <input type="button" value="&#8722;" onclick="calc.answer.value+='-'"><br><br>
+            <input type="button" value="7" onclick="calc.answer.value+=7">
+            <input type="button" value="8" onclick="calc.answer.value+=8">
+            <input type="button" value="9" onclick="calc.answer.value+=9">
+            <input type="button" value="&#10761;" onclick="calc.answer.value+='*'" id="multiply"><br><br>
+            <input type="button" value="." onclick="calc.answer.value+='.'">
+            <input type="button" value="0" onclick="calc.answer.value+=0">
+            <input type="button" value="&divide;" onclick="calc.answer.value+='/'">
+            <input type="button" value="=" onclick="calc.answer.value=eval(calc.answer.value)"><br><br>
+            <input type="button" value="Clear All" id="clear" onclick="calc.answer.value=''">
+            <input type="button" value="&#9003;" id="backspace" onclick="calc.answer.value=calc.answer.value.slice(0,calc.answer.value.length-1)">
+        </form>
+    </div>
+</body>
+</html>
